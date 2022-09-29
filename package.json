@@ -1,0 +1,38 @@
+{
+  "name": "message-broker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "npm run lint && nyc --reporter=html --reporter=text mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatagoodbot/message-broker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whatagoodbot/message-broker/issues"
+  },
+  "homepage": "https://github.com/whatagoodbot/message-broker#readme",
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "standard": "^17.0.0"
+  },
+    "dependencies": {
+    "ajv": "^8.11.0",
+    "mqtt": "^4.3.7"
+  }
+}
