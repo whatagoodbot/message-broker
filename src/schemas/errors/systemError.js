@@ -5,9 +5,9 @@ export default {
       payload: {
         type: 'object',
         properties: {
-          error: {
-            type: 'string',
-            description: 'Any error raised'
+          errors: {
+            type: ['string', 'array'],
+            description: 'Any error(s) raised'
           },
           message: {
             type: 'string',
