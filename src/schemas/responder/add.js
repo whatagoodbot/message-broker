@@ -34,16 +34,12 @@ export default {
       payload: {
         type: 'object',
         properties: {
-          message: {
-            type: 'string',
-            description: 'The message to broadcast'
-          },
-          image: {
-            type: 'string',
-            description: 'Any images to return as part of the broadcast'
+          success: {
+            type: 'boolean',
+            description: 'Was the response added.'
           }
         },
-        required: ['message'],
+        required: ['success'],
         additionalProperties: false
       },
       meta: {
