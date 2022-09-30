@@ -14,7 +14,7 @@ export default {
             description: 'The message to broadcast about the error'
           }
         },
-        required: ['error', 'message'],
+        required: ['errors', 'message'],
         additionalProperties: false
       },
       meta: {
