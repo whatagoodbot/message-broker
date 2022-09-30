@@ -32,7 +32,10 @@ export default {
               description: 'Any images to return as part of the broadcast'
             }
           },
-          required: ['message'],
+          oneOf: [
+            { required: ['message'] },
+            { required: ['image'] }
+          ],
           additionalProperties: false
         }
       },

@@ -34,8 +34,11 @@ export default {
             description: 'Any images to return as part of the broadcast'
           }
         },
-        required: ['message'],
-        additionalProperties: false
+        oneOf: [
+          { required: ['message'] },
+          { required: ['image'] }
+        ],
+      additionalProperties: false
       },
       meta: {
         type: 'object',
