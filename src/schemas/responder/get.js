@@ -25,7 +25,11 @@ export default {
       payload: {
         type: 'object',
         properties: {
-          message: {
+          error: {
+            type: 'string',
+            description: 'Any error raised'
+          },
+        message: {
             type: 'string',
             description: 'The message to broadcast'
           },
