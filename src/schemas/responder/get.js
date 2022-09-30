@@ -29,7 +29,7 @@ export default {
             type: 'string',
             description: 'Any error raised'
           },
-        message: {
+          message: {
             type: 'string',
             description: 'The message to broadcast'
           },
