@@ -23,6 +23,10 @@ export default {
         items: {
           type: 'object',
           properties: {
+            key: {
+              type: 'string',
+              description: 'The key of the response'
+            },
             message: {
               type: 'string',
               description: 'The message to broadcast'
@@ -33,8 +37,8 @@ export default {
             }
           },
           oneOf: [
-            { required: ['message'] },
-            { required: ['image'] }
+            { required: ['key', 'message'] },
+            { required: ['key', 'image'] }
           ],
           additionalProperties: false
         }
