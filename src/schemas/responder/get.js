@@ -38,7 +38,7 @@ export default {
           { required: ['message'] },
           { required: ['image'] }
         ],
-      additionalProperties: false
+        additionalProperties: false
       },
       meta: {
         type: 'object',
