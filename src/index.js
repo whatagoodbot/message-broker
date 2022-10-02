@@ -1,6 +1,6 @@
 import { connect } from 'mqtt'
 import mqttOptions from './config.js'
-import { Validator } from '../validator.js'
+import { Validator } from './validator.js'
 
 import add from './schemas/responder/add.js'
 import get from './schemas/responder/get.js'
