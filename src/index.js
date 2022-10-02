@@ -5,10 +5,10 @@ import { Validator } from './validator.js'
 import add from './schemas/responder/add.js'
 import get from './schemas/responder/get.js'
 import getAll from './schemas/responder/getAll.js'
-import * as sysError from './schemas/systemError.js'
-import * as chatMsg from './schemas/chatMessage.js'
-import * as extRequest from './schemas/externalRequest.js'
-import * as broadcastMsg from './schemas/broadcastMessage.js'
+import sysError from './schemas/systemError.js'
+import chatMsg from './schemas/chatMessage.js'
+import extRequest from './schemas/externalRequest.js'
+import broadcastMsg from './schemas/broadcastMessage.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
