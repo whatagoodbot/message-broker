@@ -8,6 +8,8 @@ export class Validator {
 
   validate (data) {
     const isValid = this.schemaValidator(data)
+    console.log('isValid', isValid)
+    console.log(data)
     if (isValid) {
       return data
     }

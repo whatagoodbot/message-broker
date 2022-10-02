@@ -7,6 +7,8 @@ import get from './schemas/responder/get.js'
 import getAll from './schemas/responder/getAll.js'
 import * as sysError from './schemas/systemError.js'
 import * as chatMsg from './schemas/chatMessage.js'
+import * as extRequest from './schemas/externalRequest.js'
+import * as broadcastMsg from './schemas/broadcastMessage.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
@@ -25,5 +27,7 @@ export default {
     response: new Validator(getAll.response)
   },
   systemError: new Validator(sysError),
-  chatMessage: new Validator(chatMsg)
+  chatMessage: new Validator(chatMsg),
+  externalRequest: new Validator(extRequest),
+  broadcastMessage: new Validator(broadcastMsg)
 }
