@@ -17,6 +17,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['message'],
+  required: ['service'],
   additionalProperties: false
 }
