@@ -3,7 +3,7 @@ import { Validator } from '../validator.js'
 import add from './responder/add.js'
 import get from './responder/get.js'
 import getAll from './responder/getAll.js'
-import systemError from './systemError.js'
+import * as sysError from './systemError.js'
 import chatMessage from './chatMessage.js'
 
 export const responder = {
@@ -21,5 +21,5 @@ export const responder = {
   }
 }
 
-export const systemError = new Validator(systemError)
+export const systemError = new Validator(sysError)
 export const chatMessage = new Validator(chatMessage)
