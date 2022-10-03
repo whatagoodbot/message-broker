@@ -9,24 +9,24 @@ export default {
           type: 'string',
           description: 'The message to broadcast'
         },
-        // images: {
-        //   type: 'array',
-        //   description: 'The images to show'
-        // },
-        // mentions: {
-        //   type: 'object',
-        //   description: 'Any users to mention',
-        //   properties: {
-        //     handle: {
-        //       type: 'string',
-        //       description: 'The handle to mention'
-        //     },
-        //     position: {
-        //       type: 'integer',
-        //       description: 'Assuming the client needs to know where to place the mention - this is the position in the string to show the mention'
-        //     }        
-        //   }
-        // }
+        images: {
+          type: 'array',
+          description: 'The images to show'
+        },
+        mentions: {
+          type: 'object',
+          description: 'Any users to mention',
+          properties: {
+            handle: {
+              type: 'string',
+              description: 'The handle to mention'
+            },
+            position: {
+              type: 'integer',
+              description: 'Assuming the client needs to know where to place the mention - this is the position in the string to show the mention'
+            }
+          }
+        }
       },
       additionalProperties: false
     },
