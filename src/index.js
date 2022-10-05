@@ -11,6 +11,7 @@ import chatMsg from './schemas/chatMessage.js'
 import extRequest from './schemas/externalRequest.js'
 import broadcast from './schemas/broadcast.js'
 import songPlayed from './schemas/songPlayed.js'
+import requestToBroadcast from './schemas/requestToBroadcast.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
@@ -23,5 +24,6 @@ export default {
   chatMessage: new Validator(chatMsg),
   externalRequest: new Validator(extRequest),
   broadcast: new Validator(broadcast),
-  songPlayed: new Validator(songPlayed)
+  songPlayed: new Validator(songPlayed),
+  requestToBroadcast: new Validator(requestToBroadcast)
 }
