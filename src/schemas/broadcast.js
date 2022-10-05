@@ -9,8 +9,8 @@ export default {
           type: 'string',
           description: 'The message to broadcast'
         },
-        images: {
-          type: 'array',
+        image: {
+          type: 'string',
           description: 'The images to show'
         },
         mentions: {

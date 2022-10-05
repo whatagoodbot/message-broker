@@ -1,17 +1,21 @@
 export default {
   type: 'object',
   properties: {
-    message: {
+    artist: {
       type: 'string',
-      description: 'The message received from a user in chat'
+      description: 'The artist for the song'
     },
-    sender: {
+    title: {
       type: 'string',
-      description: 'The message received from a user in chat'
+      description: 'The title of the song'
+    },
+    dj: {
+      type: 'string',
+      description: 'Who played the song'
     },
     room: {
       type: 'string',
-      description: 'The room the message was posted in'
+      description: 'The room the song is playing in'
     },
     meta: {
       type: 'object',
@@ -19,6 +23,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['message', 'sender', 'room'],
+  required: ['artist', 'title', 'dj', 'room'],
   additionalProperties: false
 }
