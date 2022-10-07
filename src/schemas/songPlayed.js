@@ -10,8 +10,23 @@ export default {
       description: 'The title of the song'
     },
     dj: {
-      type: 'string',
-      description: 'Who played the song'
+      type: 'object',
+      description: 'Who played the song',
+      properties: {
+        userId: {
+          type: 'string',
+          description: 'The users unique identifier'
+        },
+        nickname: {
+          type: 'string',
+          description: 'The handle the user goes by'
+        },
+        isBot: {
+          type: 'boolean',
+          description: 'Is it a bot DJ'
+        }
+      },
+      required: ['userId', 'nickname']
     },
     room: {
       type: 'string',

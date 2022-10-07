@@ -13,11 +13,15 @@ export default {
           type: 'string',
           description: 'The images to show'
         },
-        mentions: {
+        mention: {
           type: 'object',
           description: 'Any users to mention',
           properties: {
-            handle: {
+            userId: {
+              type: 'string',
+              description: 'The users id'
+            },
+            userNickname: {
               type: 'string',
               description: 'The handle to mention'
             },

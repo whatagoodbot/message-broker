@@ -5,18 +5,13 @@ export default {
       type: 'string',
       description: 'A unique identifier for the room - commonly known as the "slug"'
     },
-    user: {
+    nickname: {
       type: 'string',
-      description: 'A unique identifier for the user - normally a UUID'
+      description: 'The handle the user goes by - used for greetings'
     },
-    key: {
+    userId: {
       type: 'string',
-      description: 'The name of the response you would like'
-    },
-    category: {
-      type: 'string',
-      description: 'The response category.',
-      enum: ['general', 'sentience', 'system', 'userGreeting', 'roomGreeting', 'songChoice', 'artistChoice', 'badgeReaction']
+      description: 'The users unique identifier'
     },
     meta: {
       type: 'object',
@@ -24,6 +19,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['room', 'category'],
+  required: ['room', 'userId', 'nickname'],
   additionalProperties: false
 }

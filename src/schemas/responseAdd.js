@@ -17,7 +17,7 @@ export default {
     category: {
       type: 'string',
       description: 'The response category.',
-      enum: ['general', 'sentience', 'system', 'greeting']
+      enum: ['general', 'sentience', 'system', 'userGreeting', 'roomGreeting', 'songChoice', 'artistChoice', 'badgeReaction']
     },
     value: {
       type: 'string',
