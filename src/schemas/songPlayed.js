@@ -28,6 +28,21 @@ export default {
       },
       required: ['userId', 'nickname']
     },
+    details: {
+      type: 'object',
+      description: 'Additional details about the song',
+      properties: {
+        id: {
+          type: 'string',
+          description: 'The songs unique identifier'
+        },
+        provider: {
+          type: 'string',
+          description: 'The provider used to play the song'
+        }
+      },
+      required: ['id']
+    },
     room: {
       type: 'string',
       description: 'The room the song is playing in'
@@ -38,6 +53,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['artist', 'title', 'dj', 'room'],
+  required: ['artist', 'title', 'dj', 'room', 'details'],
   additionalProperties: false
 }

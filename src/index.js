@@ -12,9 +12,12 @@ import forwardedChatMessage from './schemas/forwardedChatMessage.js'
 import extRequest from './schemas/externalRequest.js'
 import broadcast from './schemas/broadcast.js'
 import songPlayed from './schemas/songPlayed.js'
+import songReaction from './schemas/songReaction.js'
 import requestToBroadcast from './schemas/requestToBroadcast.js'
 import userConnect from './schemas/userConnect.js'
 import userDisconnect from './schemas/userDisconnect.js'
+import stats from './schemas/stats.js'
+import reportStats from './schemas/reportStats.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
@@ -29,7 +32,10 @@ export default {
   externalRequest: new Validator(extRequest),
   broadcast: new Validator(broadcast),
   songPlayed: new Validator(songPlayed),
+  songReaction: new Validator(songReaction),
   requestToBroadcast: new Validator(requestToBroadcast),
   userConnect: new Validator(userConnect),
-  userDisconnect: new Validator(userDisconnect)
+  userDisconnect: new Validator(userDisconnect),
+  stats: new Validator(stats),
+  reportStats: new Validator(reportStats)
 }

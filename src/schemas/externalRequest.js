@@ -3,8 +3,7 @@ export default {
   properties: {
     service: {
       type: 'string',
-      description: 'The service request to make',
-      enum: ['giphy', 'dadjoke', 'youtube', 'weather']
+      description: 'The service request to make'
     },
     query: {
       type: 'object',
