@@ -25,6 +25,37 @@ export default {
         star: {
           type: 'integer',
           description: 'Amount of stars, if requested'
+        },
+        popular: {
+          type: 'object',
+          description: 'The popular spin',
+          properties: {
+            titleArtist: {
+              type: 'string',
+              description: 'The artist and song title that was most popular'
+            },
+            score: {
+              type: 'integer',
+              description: 'The score for the most popular'
+            }
+          }
+        }
+      }
+    },
+    leaderboard: {
+      type: 'array',
+      description: 'The type of statistics requested',
+      items: {
+        type: 'object',
+        properties: {
+          user: {
+            type: 'string',
+            description: 'The users uniqueu identifier'
+          },
+          score: {
+            type: 'integer',
+            description: 'The users score'
+          }
         }
       }
     },
@@ -34,6 +65,9 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['stats'],
+  oneOf: [
+    { required: ['stats'] },
+    { required: ['leaderboard'] }
+  ],
   additionalProperties: false
 }

@@ -18,6 +18,8 @@ import userConnect from './schemas/userConnect.js'
 import userDisconnect from './schemas/userDisconnect.js'
 import stats from './schemas/stats.js'
 import reportStats from './schemas/reportStats.js'
+import quickTheme from './schemas/quickTheme.js'
+import themeUpdate from './schemas/themeUpdate.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
@@ -37,5 +39,7 @@ export default {
   userConnect: new Validator(userConnect),
   userDisconnect: new Validator(userDisconnect),
   stats: new Validator(stats),
-  reportStats: new Validator(reportStats)
+  reportStats: new Validator(reportStats),
+  quickTheme: new Validator(quickTheme),
+  themeUpdate: new Validator(themeUpdate)
 }

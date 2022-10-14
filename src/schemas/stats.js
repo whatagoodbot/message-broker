@@ -17,7 +17,7 @@ export default {
         type: {
           type: 'string',
           description: 'What type of statistic do you want',
-          enum: ['nope', 'dope', 'star', 'spins', 'leaderboard']
+          enum: ['all', 'nope', 'dope', 'star', 'spins', 'leaderboard', 'popular']
         },
         period: {
           type: 'string',

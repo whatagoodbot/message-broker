@@ -1,45 +1,54 @@
 export default {
   type: 'object',
   properties: {
-    response: {
-      type: 'object',
-      description: 'The response from the external service - will contain ',
-      properties: {
-        message: {
-          type: 'string',
-          description: 'The message to broadcast'
-        },
-        image: {
-          type: 'string',
-          description: 'The images to show'
-        },
-        mention: {
-          type: 'object',
-          description: 'Any users to mention',
-          properties: {
-            userId: {
-              type: 'string',
-              description: 'The users id'
-            },
-            userNickname: {
-              type: 'string',
-              description: 'The handle to mention'
-            },
-            position: {
-              type: 'integer',
-              description: 'Assuming the client needs to know where to place the mention - this is the position in the string to show the mention'
-            }
+    messagId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
+    message: {
+      type: 'string',
+      description: 'The message to broadcast'
+    },
+    image: {
+      type: 'string',
+      description: 'The images to show'
+    },
+    mentions: {
+      type: 'array',
+      description: 'List of users to mention',
+      items: {
+        type: 'object',
+        description: 'Any users to mention',
+        properties: {
+          userId: {
+            type: 'string',
+            description: 'The users id'
+          },
+          userNickname: {
+            type: 'string',
+            description: 'The handle to mention'
+          },
+          position: {
+            type: 'integer',
+            description: 'Assuming the client needs to know where to place the mention - this is the position in the string to show the mention'
           }
         }
-      },
-      additionalProperties: false
+      }
     },
-    meta: {
-      type: 'object',
-      description: 'Any meta information passed in required to handle the response',
-      additionalProperties: true
+    pin: {
+      type: 'boolean',
+      description: 'Should the message be pinned'
+    },
+    clearPin: {
+      type: 'boolean',
+      description: 'Should the pinned message be cleared'
     }
   },
-  required: ['response'],
+  meta: {
+    type: 'object',
+    description: 'Any meta information passed in required to handle the response',
+    additionalProperties: true
+  },
+  required: ['messageId', 'response'],
   additionalProperties: false
 }
