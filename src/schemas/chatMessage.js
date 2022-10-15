@@ -1,7 +1,7 @@
 export default {
   type: 'object',
   properties: {
-    messagId: {
+    messageId: {
       type: 'string',
       description: 'A unique identifier for the message'
     },
