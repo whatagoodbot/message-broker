@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     currentTheme: {
       type: 'string',
       description: 'The theme currently being used'
@@ -40,6 +44,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['currentTheme', 'nextTheme', 'leader', 'caboose', 'trigger'],
+  required: ['messageId', 'currentTheme', 'nextTheme', 'leader', 'caboose', 'trigger'],
   additionalProperties: false
 }

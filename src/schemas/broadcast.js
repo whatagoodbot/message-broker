@@ -1,7 +1,7 @@
 export default {
   type: 'object',
   properties: {
-    messagId: {
+    messageId: {
       type: 'string',
       description: 'A unique identifier for the message'
     },
@@ -42,13 +42,13 @@ export default {
     clearPin: {
       type: 'boolean',
       description: 'Should the pinned message be cleared'
+    },
+    meta: {
+      type: 'object',
+      description: 'Any meta information passed in required to handle the response',
+      additionalProperties: true
     }
   },
-  meta: {
-    type: 'object',
-    description: 'Any meta information passed in required to handle the response',
-    additionalProperties: true
-  },
-  required: ['messageId', 'response'],
+  required: ['messageId', 'message'],
   additionalProperties: false
 }

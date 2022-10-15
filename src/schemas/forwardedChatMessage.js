@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     message: {
       type: 'string',
       description: 'The message received from a user in chat'
@@ -19,6 +23,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['message', 'sender', 'room'],
+  required: ['messageId', 'message', 'sender', 'room'],
   additionalProperties: false
 }

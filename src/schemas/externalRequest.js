@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     service: {
       type: 'string',
       description: 'The service request to make'
@@ -16,6 +20,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['service'],
+  required: ['messageId', 'service'],
   additionalProperties: false
 }

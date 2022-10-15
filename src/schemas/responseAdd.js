@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     room: {
       type: 'string',
       description: 'A unique identifier for the room - commonly known as the "slug"'
@@ -29,6 +33,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['room', 'key', 'type', 'value', 'category'],
+  required: ['messageId', 'room', 'key', 'type', 'value', 'category'],
   additionalProperties: false
 }

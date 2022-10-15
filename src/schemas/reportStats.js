@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     type: {
       type: 'string',
       description: 'The type of statistics requested'
@@ -66,8 +70,8 @@ export default {
     }
   },
   oneOf: [
-    { required: ['stats'] },
-    { required: ['leaderboard'] }
+    { required: ['messageId', 'stats'] },
+    { required: ['messageId', 'leaderboard'] }
   ],
   additionalProperties: false
 }

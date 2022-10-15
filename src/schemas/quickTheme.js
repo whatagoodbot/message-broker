@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     action: {
       type: 'string',
       description: 'The quickt theme action to take',
@@ -33,6 +37,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['action'],
+  required: ['messageId', 'action'],
   additionalProperties: false
 }

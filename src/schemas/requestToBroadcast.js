@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     message: {
       type: 'string',
       description: 'The message to broadcast'
@@ -29,6 +33,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['message'],
+  required: ['messageId', 'message'],
   additionalProperties: false
 }

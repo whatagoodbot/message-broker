@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     artist: {
       type: 'string',
       description: 'The artist for the song'
@@ -53,6 +57,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['artist', 'title', 'dj', 'room', 'details'],
+  required: ['messageId', 'artist', 'title', 'dj', 'room', 'details'],
   additionalProperties: false
 }

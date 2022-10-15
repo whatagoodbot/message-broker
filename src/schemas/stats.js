@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     userId: {
       type: 'string',
       description: 'The users unique identifier'
@@ -38,6 +42,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['userId', 'stat', 'room'],
+  required: ['messageId', 'userId', 'stat', 'room'],
   additionalProperties: false
 }

@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messageId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     errors: {
       type: ['string', 'array'],
       description: 'Any error(s) raised'
@@ -15,6 +19,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['errors', 'message'],
+  required: ['messageId', 'errors', 'message'],
   additionalProperties: false
 }
