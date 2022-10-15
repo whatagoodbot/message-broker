@@ -5,13 +5,18 @@ export default {
       type: 'string',
       description: 'A unique identifier for the message'
     },
-    errors: {
-      type: ['string', 'array'],
-      description: 'Any error(s) raised'
-    },
-    message: {
+    userId: {
       type: 'string',
-      description: 'The message to broadcast about the error'
+      description: 'The users unique identifier'
+    },
+    reaction: {
+      type: 'string',
+      description: 'The artist for the song',
+      enum: ['nope', 'dope', 'star']
+    },
+    room: {
+      type: 'string',
+      description: 'The room the song is playing in'
     },
     meta: {
       type: 'object',
@@ -19,6 +24,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['messageId', 'errors', 'message'],
+  required: ['messageId', 'userId', 'reaction', 'room'],
   additionalProperties: false
 }

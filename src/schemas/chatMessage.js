@@ -1,6 +1,10 @@
 export default {
   type: 'object',
   properties: {
+    messagId: {
+      type: 'string',
+      description: 'A unique identifier for the message'
+    },
     message: {
       type: 'string',
       description: 'The message received from a user in chat'
@@ -11,7 +15,7 @@ export default {
     },
     room: {
       type: 'string',
-      description: 'The message received from a user in chat'
+      description: 'The room the message was posted in'
     },
     meta: {
       type: 'object',
@@ -19,6 +23,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['message', 'sender', 'room'],
+  required: ['messageId', 'message', 'sender', 'room'],
   additionalProperties: false
 }

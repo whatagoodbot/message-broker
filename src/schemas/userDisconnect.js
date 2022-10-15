@@ -5,13 +5,9 @@ export default {
       type: 'string',
       description: 'A unique identifier for the message'
     },
-    errors: {
-      type: ['string', 'array'],
-      description: 'Any error(s) raised'
-    },
-    message: {
+    userId: {
       type: 'string',
-      description: 'The message to broadcast about the error'
+      description: 'The users unique identifier'
     },
     meta: {
       type: 'object',
@@ -19,6 +15,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['messageId', 'errors', 'message'],
+  required: ['messageId', 'userId'],
   additionalProperties: false
 }

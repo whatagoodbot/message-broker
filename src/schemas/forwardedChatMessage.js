@@ -5,13 +5,17 @@ export default {
       type: 'string',
       description: 'A unique identifier for the message'
     },
-    errors: {
-      type: ['string', 'array'],
-      description: 'Any error(s) raised'
-    },
     message: {
       type: 'string',
-      description: 'The message to broadcast about the error'
+      description: 'The message received from a user in chat'
+    },
+    sender: {
+      type: 'string',
+      description: 'The message received from a user in chat'
+    },
+    room: {
+      type: 'string',
+      description: 'The room the message was posted in'
     },
     meta: {
       type: 'object',
@@ -19,6 +23,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['messageId', 'errors', 'message'],
+  required: ['messageId', 'message', 'sender', 'room'],
   additionalProperties: false
 }

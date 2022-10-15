@@ -5,13 +5,17 @@ export default {
       type: 'string',
       description: 'A unique identifier for the message'
     },
-    errors: {
-      type: ['string', 'array'],
-      description: 'Any error(s) raised'
-    },
-    message: {
+    room: {
       type: 'string',
-      description: 'The message to broadcast about the error'
+      description: 'A unique identifier for the room - commonly known as the "slug"'
+    },
+    nickname: {
+      type: 'string',
+      description: 'The handle the user goes by - used for greetings'
+    },
+    userId: {
+      type: 'string',
+      description: 'The users unique identifier'
     },
     meta: {
       type: 'object',
@@ -19,6 +23,6 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['messageId', 'errors', 'message'],
+  required: ['messageId', 'room', 'userId', 'nickname'],
   additionalProperties: false
 }
