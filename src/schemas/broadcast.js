@@ -49,6 +49,9 @@ export default {
       additionalProperties: true
     }
   },
-  required: ['messageId', 'message'],
+  oneOf: [
+    { required: ['messageId', 'message'] },
+    { required: ['messageId', 'image'] }
+  ],
   additionalProperties: false
 }
