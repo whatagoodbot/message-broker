@@ -26,15 +26,15 @@ export default {
           type: 'integer',
           description: 'Amount of spins, if requested'
         },
-        dope: {
+        dopes: {
           type: 'integer',
           description: 'Amount of dopes, if requested'
         },
-        nope: {
+        nopes: {
           type: 'integer',
           description: 'Amount of nopes, if requested'
         },
-        star: {
+        stars: {
           type: 'integer',
           description: 'Amount of stars, if requested'
         },
