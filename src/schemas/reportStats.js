@@ -9,6 +9,10 @@ export default {
       type: 'string',
       description: 'The type of statistics requested'
     },
+    period: {
+      type: 'string',
+      description: 'The period of statistics requested'
+    },
     stats: {
       type: 'object',
       description: 'The actual stastics',
