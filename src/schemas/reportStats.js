@@ -13,6 +13,10 @@ export default {
       type: 'string',
       description: 'The period of statistics requested'
     },
+    filter: {
+      type: 'string',
+      description: 'The filter of statistics requested'
+    },
     stats: {
       type: 'object',
       description: 'The actual stastics',
