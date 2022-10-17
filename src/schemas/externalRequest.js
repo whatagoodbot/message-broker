@@ -7,6 +7,10 @@ export default {
     },
     service: {
       type: 'string',
+      description: 'The service that handles the request'
+    },
+    name: {
+      type: 'string',
       description: 'The service request to make'
     },
     query: {
