@@ -13,7 +13,7 @@ export default {
       type: 'string',
       description: 'The service request to make'
     },
-    query: {
+    arguments: {
       type: 'object',
       description: 'Any query params to pass to the external service',
       additionalProperties: true
