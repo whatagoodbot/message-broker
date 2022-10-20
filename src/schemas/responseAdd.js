@@ -163,8 +163,7 @@ export default {
               additionalProperties: true
             }
           }
-        },
-        required: ['userId', 'nickname', 'isBot']
+        }
       }
     }
   },
