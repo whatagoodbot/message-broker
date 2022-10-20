@@ -106,6 +106,10 @@ export default {
           type: 'string',
           description: 'The songs unique identifier'
         },
+        dj: {
+          type: 'string',
+          description: 'The id of the dj playing the song'
+        },
         provider: {
           type: 'string',
           description: 'The provider used to play the song'
@@ -167,6 +171,9 @@ export default {
       }
     }
   },
-  required: ['messageId', 'room', 'sender', 'client', 'user', 'key', 'category'],
+  oneOf: [
+    { required: ['messageId', 'room', 'sender', 'client', 'user', 'key', 'category'] },
+    { required: ['messageId', 'key', 'category'] }
+  ],
   additionalProperties: false
 }
