@@ -215,9 +215,5 @@ export default {
       }
     }
   },
-  oneOf: [
-    { required: ['messageId', 'room', 'sender', 'client', 'user', 'type', 'period', 'filter', 'stats'] },
-    { required: ['messageId', 'room', 'sender', 'client', 'user', 'type', 'period', 'filter', 'leaderboard'] }
-  ],
   additionalProperties: true
 }

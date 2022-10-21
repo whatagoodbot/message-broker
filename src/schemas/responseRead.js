@@ -170,9 +170,5 @@ export default {
       }
     }
   },
-  oneOf: [
-    { required: ['messageId', 'room', 'sender', 'client', 'user', 'key', 'category'] },
-    { required: ['messageId', 'key', 'category'] }
-  ],
   additionalProperties: true
 }

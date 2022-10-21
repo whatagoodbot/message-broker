@@ -183,9 +183,5 @@ export default {
       }
     }
   },
-  oneOf: [
-    { required: ['messageId', 'room', 'sender', 'client', 'user', 'message'] },
-    { required: ['messageId', 'room', 'sender', 'client', 'user', 'image'] }
-  ],
   additionalProperties: true
 }
