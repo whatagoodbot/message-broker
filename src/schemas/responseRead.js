@@ -174,5 +174,5 @@ export default {
     { required: ['messageId', 'room', 'sender', 'client', 'user', 'key', 'category'] },
     { required: ['messageId', 'key', 'category'] }
   ],
-  additionalProperties: false
+  additionalProperties: true
 }

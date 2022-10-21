@@ -155,5 +155,5 @@ export default {
     }
   },
   required: ['messageId', 'room', 'sender', 'client', 'user', 'reaction'],
-  additionalProperties: false
+  additionalProperties: true
 }

@@ -219,5 +219,5 @@ export default {
     { required: ['messageId', 'room', 'sender', 'client', 'user', 'type', 'period', 'filter', 'stats'] },
     { required: ['messageId', 'room', 'sender', 'client', 'user', 'type', 'period', 'filter', 'leaderboard'] }
   ],
-  additionalProperties: false
+  additionalProperties: true
 }
