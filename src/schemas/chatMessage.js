@@ -5,7 +5,7 @@ export default {
       type: 'string',
       description: 'A unique identifier for the message'
     },
-    message: {
+    chatMessage: {
       type: 'string',
       description: 'The message to broadcast'
     },
@@ -153,6 +153,6 @@ export default {
       }
     }
   },
-  required: ['messageId', 'room', 'sender', 'client', 'user', 'message'],
+  required: ['messageId', 'room', 'sender', 'client', 'user', 'chatMessage'],
   additionalProperties: true
 }
