@@ -78,7 +78,7 @@ export default {
     client: {
       type: 'string',
       description: 'Unique identifier for the client - allows filtering of messages by the client',
-      enum: ['TTL', 'RVRB']
+      enum: ['goodbot-ttl', 'RVRB']
     },
     user: {
       type: 'object',
