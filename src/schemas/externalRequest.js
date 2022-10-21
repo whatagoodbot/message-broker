@@ -14,7 +14,7 @@ export default {
       description: 'The service request to make'
     },
     arguments: {
-      type: 'object',
+      type: 'string',
       description: 'Any query params to pass to the external service',
       additionalProperties: true
     },
