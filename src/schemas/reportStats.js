@@ -71,6 +71,7 @@ export default {
           type: 'string',
           description: 'Which room aired the first play'
         }
+      }
     },
     leaderboard: {
       type: 'array',
