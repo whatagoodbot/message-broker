@@ -54,6 +54,24 @@ export default {
         }
       }
     },
+    firstPlay: {
+      type: 'object',
+      description: 'The actual stastics',
+      additionalProperties: false,
+      properties: {
+        date: {
+          type: 'string',
+          description: 'The date of the first play'
+        },
+        user: {
+          type: 'string',
+          description: 'Who span the first play'
+        },
+        room: {
+          type: 'string',
+          description: 'Which room aired the first play'
+        }
+    },
     leaderboard: {
       type: 'array',
       description: 'The type of statistics requested',
