@@ -1,7 +1,6 @@
 {
-  "name": "message-broker",
+  "name": "@whatagoodbot/module-mqtt",
   "version": "3.0.1",
-  "description": "",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
@@ -31,8 +30,12 @@
     "nyc": "^15.1.0",
     "standard": "^17.0.0"
   },
-    "dependencies": {
+  "dependencies": {
     "ajv": "^8.11.0",
     "mqtt": "^4.3.7"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
