@@ -1,6 +1,6 @@
 {
-  "name": "@whatagoodbot/module-mqtt",
-  "version": "3.0.1",
+  "name": "@whatagoodbot/mqtt",
+  "version": "3.0.3",
   "main": "src/index.js",
   "type": "module",
   "scripts": {

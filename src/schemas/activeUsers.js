@@ -8,6 +8,10 @@ export default {
         slug: {
           type: 'string',
           description: 'The room\'s unique slug'
+        },
+        name: {
+          type: 'string',
+          description: 'The room\'s name'
         }
       },
       required: ['slug'],

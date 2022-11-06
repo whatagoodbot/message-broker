@@ -16,6 +16,7 @@ import songReaction from './schemas/songReaction.js'
 import themeUpdate from './schemas/themeUpdate.js'
 import userConnect from './schemas/userConnect.js'
 import userDisconnect from './schemas/userDisconnect.js'
+import activeUsers from './schemas/activeUsers.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
@@ -34,5 +35,6 @@ export default {
   songReaction: new Validator(songReaction),
   themeUpdate: new Validator(themeUpdate),
   userConnect: new Validator(userConnect),
-  userDisconnect: new Validator(userDisconnect)
+  userDisconnect: new Validator(userDisconnect),
+  activeUsers: new Validator(activeUsers)
 }
