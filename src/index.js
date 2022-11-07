@@ -17,6 +17,7 @@ import themeUpdate from './schemas/themeUpdate.js'
 import userConnect from './schemas/userConnect.js'
 import userDisconnect from './schemas/userDisconnect.js'
 import activeUsers from './schemas/activeUsers.js'
+import djChange from './schemas/djChange.js'
 
 const client = connect(mqttOptions.host, mqttOptions)
 
@@ -36,5 +37,6 @@ export default {
   themeUpdate: new Validator(themeUpdate),
   userConnect: new Validator(userConnect),
   userDisconnect: new Validator(userDisconnect),
-  activeUsers: new Validator(activeUsers)
+  activeUsers: new Validator(activeUsers),
+  djChange: new Validator(djChange)
 }
