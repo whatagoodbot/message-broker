@@ -43,6 +43,18 @@ export default {
           }
         }
       }
+    },
+    bot: {
+      type: 'object',
+      description: 'Details about the room bot',
+      properties: {
+        isDj: {
+          type: 'string',
+          description: 'The room\'s unique slug'
+        }
+      },
+      required: ['isDj'],
+      additionalProperties: true
     }
   },
   required: ['room', 'client', 'users'],
