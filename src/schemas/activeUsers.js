@@ -49,8 +49,8 @@ export default {
       description: 'Details about the room bot',
       properties: {
         isDj: {
-          type: 'string',
-          description: 'The room\'s unique slug'
+          type: 'boolean',
+          description: 'is the bot currently DJing?'
         }
       },
       required: ['isDj'],
