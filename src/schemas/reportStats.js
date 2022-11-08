@@ -49,6 +49,10 @@ export default {
             score: {
               type: 'integer',
               description: 'The score for the most popular'
+            },
+            playedBy: {
+              type: 'string',
+              description: 'Who played hte track'
             }
           }
         }
