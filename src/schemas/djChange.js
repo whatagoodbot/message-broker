@@ -149,6 +149,6 @@ export default {
       }
     }
   },
-  required: ['messageId', 'room', 'sender', 'client', 'user', 'chatMessage'],
+  required: ['messageId', 'room', 'sender', 'client', 'user'],
   additionalProperties: true
 }
