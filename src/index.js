@@ -9,6 +9,7 @@ import forwardedChatMessage from './schemas/forwardedChatMessage.js'
 import reportStats from './schemas/reportStats.js'
 import requestToBroadcast from './schemas/requestToBroadcast.js'
 import responseAdd from './schemas/responseAdd.js'
+import responseDelete from './schemas/responseDelete.js'
 import responseRead from './schemas/responseRead.js'
 import responseReadAll from './schemas/responseReadAll.js'
 import songPlayed from './schemas/songPlayed.js'
@@ -30,6 +31,7 @@ export default {
   reportStats: new Validator(reportStats),
   requestToBroadcast: new Validator(requestToBroadcast),
   responseAdd: new Validator(responseAdd),
+  responseDelete: new Validator(responseDelete),
   responseRead: new Validator(responseRead),
   responseReadAll: new Validator(responseReadAll),
   songPlayed: new Validator(songPlayed),
