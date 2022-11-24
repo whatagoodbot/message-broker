@@ -1,9 +1,9 @@
 export default {
-  port: process.env.MQTT_PORT,
-  host: `mqtt://${process.env.MQTT_HOSTNAME}`,
+  port: process.env.PORT_TOOL_MQTT,
+  host: `mqtt://${process.env.HOST_TOOL_MQTT}`,
   clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
-  username: process.env.MQTT_USERNAME,
-  password: process.env.MQTT_PASSWORD,
+  username: process.env.USERNAME_TOOL_MQTT,
+  password: process.env.PASSWORD_TOOL_MQTT,
   keepalive: 60,
   reconnectPeriod: 1000,
   protocolId: 'MQIsdp',

@@ -3,12 +3,12 @@ import { addStandard, required } from './components/all.js'
 export default {
   type: 'object',
   properties: {
-    chatMessage: {
+    value: {
       type: 'string',
-      description: 'The message to broadcast'
+      description: 'The response to match the key'
     },
     ...addStandard()
   },
-  required: required.concat(['chatMessage']),
+  required: required.concat(['value']),
   additionalProperties: true
 }
