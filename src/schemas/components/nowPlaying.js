@@ -25,6 +25,10 @@ export default {
     title: {
       type: 'string',
       description: 'The title of the song'
+    },
+    popularity: {
+      type: 'integer',
+      description: 'Spotify\'s popularity score'
     }
   }
 }
